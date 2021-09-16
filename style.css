@@ -40,6 +40,7 @@ body {
 
 h1,
 h2,
+h3,
 .learn-more,
 .cta {
   font-family: var(--font-fraunces);
@@ -232,4 +233,51 @@ nav {
 
 .photography .service-title {
   color: var(--color-dark-blue);
+}
+
+.testimonials {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 8em auto;
+  column-gap: 2em;
+}
+
+.testimonials-title {
+  text-transform: uppercase;
+  color: var(--color-dark-grayish-blue);
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  margin-bottom: 4em;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-user-img {
+  width: 3.8em;
+  border-radius: 50%;
+}
+
+.testimonial-msg {
+  color: var(--color-very-dark-grayish-blue);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 3em 0 4em;
+}
+
+.user-name {
+  color: var(--color-very-dark-desaturated-blue);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.user-role {
+  color: var(--color-grayish-blue);
+  font-size: 0.75rem;
+  margin-top: 1em;
 }
