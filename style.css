@@ -151,11 +151,15 @@ header {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: 100%;
   place-items: center;
-  margin-top: -0.21em;
+  margin-top: -0.25em;
 }
 
 .service-img {
   width: 100%;
+}
+
+.service-img-mobile {
+  display: none;
 }
 
 .service-info {
@@ -342,20 +346,61 @@ footer {
     hue-rotate(198deg) brightness(108%) contrast(99%);
 }
 
-@media screen and (max-width: 375px) {
-  .navbar {
-    padding: 1.8em 1.5em;
-  }
-
-  .header-img {
+@media screen and (max-width: 900px) {
+  .icon-arrow-down {
     display: none;
   }
 
-  .header-img-mobile {
-    display: inline-block;
-    width: 100%;
-    /* height: 20em; */
-    object-position: center;
+  .service {
+    grid-template-columns: 1fr;
+  }
+
+  .service-info {
+    margin: 3.5em auto;
+    width: 85%;
+    grid-row: 2;
+    text-align: center;
+  }
+
+  .stand-out .service-info {
+    grid-column: unset;
+  }
+
+  .service-overlay-info {
+    width: 90%;
+  }
+
+  .photography {
+    top: -0.5em;
+  }
+
+  .testimonials {
+    width: 85%;
+    display: block;
+    margin: 4em auto;
+  }
+
+  .testimonial {
+    margin-bottom: 4em;
+  }
+
+  .testimonials-title {
+    font-size: 1rem;
+    margin-bottom: 3em;
+  }
+
+  .testimonial-msg {
+    margin: 2em 0;
+  }
+
+  .user-name {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    padding: 1.8em 1.5em;
   }
 
   .header-logo {
@@ -406,10 +451,50 @@ footer {
 
   .header-title {
     font-size: 2rem;
+    padding: 0 1em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-img {
+    display: none;
+  }
+
+  .header-img-mobile {
+    display: inline-block;
+    width: 100%;
+    object-position: center;
+  }
+
+  .header-title {
     top: 4em;
   }
 
   .icon-arrow-down {
+    display: inline-block;
     top: 65%;
+  }
+
+  .service-title {
+    font-size: 1.8rem;
+  }
+
+  .service-img {
+    display: none;
+  }
+
+  .service-img-mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .footer-menu {
+    width: 80%;
+    margin: 2em auto 0;
+    justify-content: space-between;
   }
 }
