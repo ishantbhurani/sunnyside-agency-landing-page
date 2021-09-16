@@ -195,3 +195,11 @@ nav {
 .transform .learn-more::before {
   background-color: var(--color-yellow);
 }
+
+.stand-out .service-info {
+  grid-column: 2;
+}
+
+.stand-out .learn-more::before {
+  background-color: var(--color-soft-red);
+}
