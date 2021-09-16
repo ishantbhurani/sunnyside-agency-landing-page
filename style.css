@@ -206,3 +206,30 @@ nav {
 .stand-out .learn-more::before {
   background-color: var(--color-soft-red);
 }
+
+.service-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.service-overlay-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 50%;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.service-overlay .service-title {
+  font-size: 1.5rem;
+}
+
+.design .service-title {
+  color: var(--color-dark-desaturated-cyan);
+}
+
+.photography .service-title {
+  color: var(--color-dark-blue);
+}
